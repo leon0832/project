@@ -6,7 +6,7 @@ import redis.clients.jedis.JedisPoolConfig;
 
 public class JedisUtil {
 
-	//Redis服务器IP
+	//Redis服务器IPs
 	private static String HOST = "127.0.0.1";
 
 	//Redis的端口号
