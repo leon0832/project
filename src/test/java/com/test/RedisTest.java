@@ -11,17 +11,5 @@ public class RedisTest {
 		Jedis jedis = JedisUtil.getJedis();
 		jedis.select(0);
 		System.out.println(jedis.dbSize());
-		String s = "0";
-		switch (s) {
-			case "q":
-				System.out.println("sss");
-				break;
-			case "2":
-				System.out.println("123");
-				break;
-			default:
-				break;
-		}
-
 	}
 }
