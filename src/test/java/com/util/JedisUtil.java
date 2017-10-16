@@ -11,7 +11,7 @@ import java.util.Set;
 public  class JedisUtil {
 
 	//Redis服务器IP
-	private static String HOST = "127.0.0.1";
+	private static String HOST = "47.95.222.253";
 
 	//Redis的端口号
 	private static int PORT = 6379;
@@ -32,6 +32,12 @@ public  class JedisUtil {
 	//返回连接时，测试连接是否可用
 	private static boolean TEST_ON_RETURN = true;
 
+	//redis连接密码
+	private static String AUTH = "iceberglh";
+
+	//数据库索引
+	private static int INDEX = 15;
+
 	private static JedisPool jedisPool = null;
 
 	/**
@@ -49,9 +55,9 @@ public  class JedisUtil {
 		config.setMaxWaitMillis(MAX_WAIT);
 		config.setTestOnBorrow(TEST_ON_BORROW);
 		config.setTestOnReturn(TEST_ON_RETURN);
-		jedisPool = new JedisPool(config, HOST, PORT, 10000);
+//		jedisPool = new JedisPool(config, HOST, PORT, 10000);
 		// redis如果设置了密码：
-//		jedisPool = new JedisPool(config, HOST, PORT, 10000, "");
+		jedisPool = new JedisPool(config, HOST, PORT, 10000, AUTH,INDEX);
 	}
 
 	public  JedisPool getPool() {
@@ -62,9 +68,7 @@ public  class JedisUtil {
 	 * 从jedis连接池中获取获取jedis对象
 	 */
 	public  static Jedis getJedis() {
-		Jedis jedis=jedisPool.getResource();
-		jedis.select(15);//数据库索引 默认0
-		return jedis;
+		return jedisPool.getResource();
 	}
 
 	/**

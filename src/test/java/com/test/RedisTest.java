@@ -8,6 +8,6 @@ public class RedisTest {
 
 	@Test
 	public void connectTest() {
-		JedisUtil.set("sdf","");
+		JedisUtil.set("sdf","sdf");
 	}
 }
