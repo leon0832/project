@@ -8,8 +8,6 @@ public class RedisTest {
 
 	@Test
 	public void connectTest() {
-		Jedis jedis = JedisUtil.getJedis();
-		jedis.select(0);
-		System.out.println(jedis.dbSize());
+		JedisUtil.set("sdf","");
 	}
 }
