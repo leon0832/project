@@ -1,8 +1,6 @@
-package com.test;
+package com.redis;
 
-import com.util.JedisUtil;
 import org.junit.Test;
-import redis.clients.jedis.Jedis;
 
 public class RedisTest {
 

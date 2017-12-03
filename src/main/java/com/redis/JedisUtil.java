@@ -1,4 +1,4 @@
-package com.util;
+package com.redis;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+@SuppressWarnings("unused")
 public  class JedisUtil {
 
 	//Redis服务器IP
