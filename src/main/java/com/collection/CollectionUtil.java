@@ -68,7 +68,7 @@ public class CollectionUtil {
 	 * @param size 数组大小
 	 * @return result
 	 */
-	private static int[] getRandomArray(int size) {
+	public static int[] getRandomArray(int size) {
 		int[] result = new int[size];
 		for (int i = 0; i < size; i++) {
 			result[i] = i;
