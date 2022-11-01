@@ -97,7 +97,7 @@ public class CollectionUtil {
 
 
 		//耗时比较  数组越大差异越大
-		System.out.println("快排耗时：" + String.valueOf(quickEnd - quickStart));
-		System.out.println("冒泡耗时：" + String.valueOf(popEnd - popStart));
+		System.out.println("快排耗时：" + (quickEnd - quickStart));
+		System.out.println("冒泡耗时：" + (popEnd - popStart));
 	}
 }

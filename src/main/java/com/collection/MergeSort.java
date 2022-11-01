@@ -2,6 +2,7 @@ package com.collection;
 
 /**
  * Created by lh on 2017/12/10.
+ * 归并排序
  */
 public class MergeSort {
 

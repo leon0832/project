@@ -1,5 +1,8 @@
 package com.collection;
 
+/**
+ * 贪心算法，删除k位数后最大或最小
+ */
 public class DeleteKNumbers {
 
 
