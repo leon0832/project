@@ -1,5 +1,7 @@
 package com.collection;
 
+import java.util.Arrays;
+
 /**
  * Created by lh on 2017/12/10.
  * 归并排序
@@ -47,11 +49,13 @@ public class MergeSort {
 
 
 	public static void main(String[] args) {
-		int arr[] = CollectionUtil.getRandomArray(100000);
+		int arr[] = CollectionUtil.getRandomArray(50);
+		System.out.println(Arrays.toString(arr));
 		Long t1 = System.currentTimeMillis();
 		sort(arr);
+		System.out.println(Arrays.toString(arr));
 		Long t2 = System.currentTimeMillis();
 		System.out.println(t2 - t1);
-		System.out.println(12 & (16 - 1));
+//		System.out.println(12 & (16 - 1));
 	}
 }

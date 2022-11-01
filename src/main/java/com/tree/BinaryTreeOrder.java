@@ -68,14 +68,15 @@ public class BinaryTreeOrder {
 		for (int i = 1; i < array.length; i++) {
 			root.insert(root, array[i]);       //向二叉树中插入数据
 		}
-		System.out.println("先根遍历：");
+		System.out.println("\n先根遍历：");
 		preOrder(root);
-		System.out.println();
-		System.out.println("中根遍历：");
+
+		System.out.println("\n中根遍历：");
 		inOrder(root);
-		System.out.println();
-		System.out.println("后根遍历：");
+
+		System.out.println("\n后根遍历：");
 		postOrder(root);
-		System.out.println("深度："+getTreeDepth(root));
+
+		System.out.println("\n深度："+getTreeDepth(root));
 	}
 }
